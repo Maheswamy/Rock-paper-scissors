@@ -3,30 +3,217 @@
   padding: 0;
   margin: 0;
 }
+html {
+  font-size: 62.5%;
+}
 body {
   background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
 }
 .container {
-  margin: 20px auto;
-  max-width: 900px;
-  min-width: 300px;
+  margin: 0 auto;
+  max-width: 90rem;
+  min-width: 30rem;
   height: 100vh;
+  padding-top: 2rem;
 }
 
 header {
-  border: 2px solid hsl(217, 16%, 45%);
-  border-radius: 10px;
+  border: 0.2rem solid hsl(217, 16%, 45%);
+  border-radius: 1rem;
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px;
+  padding: 2rem 2rem;
   font-family: "Barlow Semi Condensed", sans-serif;
-  margin: 0 10px;
+  margin: 0 1rem;
 }
 .naming_section {
   color: white;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-transform: uppercase;
 }
 .score_box {
   background-color: white;
-  width: 100px;
-  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  border-radius: 1rem;
+}
+.score_heading {
+  color: hsl(229, 64%, 46%);
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.score {
+  color: hsl(229, 25%, 31%);
+  font-weight: 700;
+  font-size: 6.4rem;
+}
+
+.main {
+  display: unset;
+  visibility: visible;
+}
+.main_tool {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_tool button {
+  background-color: white;
+  border: none;
+}
+.top_tool {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.tool_paper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 10rem;
+  min-width: 5rem;
+  max-height: 10rem;
+  min-height: 5rem;
+  padding: 5rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 2rem solid hsl(230, 89%, 65%);
+}
+.tool_scissors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 10rem;
+  min-width: 5rem;
+  max-height: 10rem;
+  min-height: 5rem;
+  padding: 5rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 2rem solid hsl(40, 84%, 53%);
+}
+.tool_rock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 10rem;
+  min-width: 5rem;
+  max-height: 10rem;
+  min-height: 5rem;
+  padding: 5rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 2rem solid hsl(349, 71%, 52%);
+}
+
+.btn-rule {
+  padding: 0.75rem 2.5rem;
+  background: none;
+  color: white;
+  border-color: hsl(217, 16%, 45%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  text-transform: uppercase;
+  border-style: solid;
+  font-size: 2.4rem;
+  border-radius: 1rem;
+  margin: 5rem 0 0 2rem;
+  outline: none;
+}
+.black_opacity {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.586);
+}
+
+.section_rule {
+  visibility: hidden;
+}
+.rules-hidden {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 35rem;
+  height: 40rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rules_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20rem;
+  margin: 3rem 3rem;
+}
+
+.rules_heading {
+  color: hsl(217, 16%, 45%);
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.result_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+.result_container {
+  display: flex;
+  gap: 10rem;
+  flex-direction: row;
+}
+.selection_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.output_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.result_heading {
+  color: hsl(217, 16%, 45%);
+  text-transform: uppercase;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.result_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.result {
+  color: hsl(217, 16%, 45%);
+  text-transform: uppercase;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  padding: 2rem 5rem;
+  background-color: white;
+  display: inline;
+}
+.result_container {
+  display: unset;
+}
+.output_visible {
+  display: unset;
+}
+.result_section1 {
+  display: unset;
 }
